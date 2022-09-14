@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+// import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  Home,
+  About,
+  Contact,
+  SharedLayout,
+  Projects,
+  ErrorPage,
+} from "./pages";
+// import { useSelector } from "react-redux";
 
 function App() {
+  // const { isSidebar } = useSelector((store) => store.main);
+  // const [sideBag, setSideBag] = useState(false);
+
+  // useEffect(() => {
+  //   // console.log(store.getState());
+  //   setSideBag(isSidebar);
+  //   console.log(sideBag);
+  // }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route element={<SharedLayout />}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </Router>
   );
 }
 

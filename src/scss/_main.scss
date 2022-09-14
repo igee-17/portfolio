@@ -1,0 +1,88 @@
+@import "config";
+@import "home";
+@import "typing-effect";
+@import "menu";
+@import "about";
+@import "projects";
+@import "contact";
+@import "side-bcg";
+@import "responsive";
+@import "flip-card";
+
+body {
+  background: $primary-color;
+  color: $white-200;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+ul {
+  //   display: flex;
+  list-style-type: none;
+  // gap: 1rem;
+}
+
+a {
+  color: $white-200;
+  text-decoration: none;
+  @include hover-secondary;
+  @include transition-ease;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  z-index: 2;
+  width: 100%;
+  // border: 2px solid blue;
+  //   padding: 1rem;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+
+  .social-icons {
+    position: fixed;
+    z-index: 1;
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  a {
+    padding: 0.4rem;
+    // @include hover-secondary;
+    @include hover-primary;
+
+    @include transition-ease;
+  }
+}
+
+footer {
+  font-size: 1rem;
+  position: fixed;
+  // z-index: -1;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  padding: 1.5rem;
+  // color: $primary-200;
+  // color: $secondary-color;
+  width: 100%;
+  // @include background-glass-2;
+  background: #000;
+  // background: $primary-600;
+  border-radius: 0;
+  border-top: 3px solid $secondary-color;
+
+  // color: $secondary-200;
+  //   color: $white-200;
+}

@@ -1,0 +1,118 @@
+.wrapper {
+  box-shadow: 2px 6px 24px 3px rgba(0, 0, 0, 0.6);
+  width: 90%;
+  // height: 3rem;
+  height: 60px;
+  // padding-bottom: 3.5rem;
+  border-radius: 10rem;
+  // background: $secondary-color;
+  // background: $primary-600;
+  background: #000;
+  margin: 30px auto;
+  // display: inline-flex;
+  display: grid;
+  grid-template-columns: 6rem auto;
+  justify-content: center;
+  overflow: hidden;
+  @include transition-ease;
+  border: 2px dashed #fff;
+
+  .static-txt {
+    font-size: 2rem;
+    // color: #3c1402;
+    // color: $secondary-color;
+    // color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    // align-items: flex-start;
+    // padding: 0;
+    color: $secondary-200;
+
+    font-weight: 500;
+    line-height: 55px;
+    // line-height: 3rem;
+    // border: 2px solid red;
+    height: auto;
+    animation: move 12s steps(2) infinite;
+
+    @keyframes move {
+      100% {
+        transform: translateY(-110px);
+        // top: -65px;
+      }
+      0% {
+        transfrom: translateY(0px);
+      }
+    }
+    .green {
+      // color: $primary-green;
+      color: $secondary-color;
+      // color: $primary-200;
+    }
+  }
+
+  .dynamic-txts {
+    margin-left: 15px;
+    height: 55px;
+    line-height: 55px;
+    // line-height: 2rem;
+    // border: 2px solid blue;
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+    li {
+      list-style: none;
+      font-size: 2rem;
+      font-weight: 500;
+      // color: #fff;
+      // color: $primary-green;
+      // color: $primary-200;
+      color: $secondary-color;
+      animation: slide 12s steps(6) infinite;
+      position: relative;
+      top: 0;
+      @keyframes slide {
+        100% {
+          // line height multiplied by number of items
+          // plus 10px gap multiplied by number of gaps
+          top: -390px;
+        }
+      }
+
+      span {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          height: 100%;
+          //   height: 50px;
+          width: 100%;
+          // background: $secondary-color;
+          // background: $primary-600;
+          background: #000;
+
+          //   background: red;
+          border-left: 2px solid #fff;
+          top: 5px;
+          left: 0;
+          animation: typing 2s steps(13) infinite;
+        }
+        @keyframes typing {
+          100% {
+            left: 100%;
+            margin: 0 -35px 0 35px;
+          }
+        }
+      }
+      .grey {
+        color: $secondary-200;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}

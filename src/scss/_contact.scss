@@ -1,0 +1,91 @@
+// @import
+
+.contact {
+  position: relative;
+  height: 100%;
+  padding: 15vh 1rem;
+  overflow: hidden;
+  align-items: center;
+  @include transition-ease;
+
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.7),
+      rgba($primary-color, 0.6),
+      rgba($primary-color, 0.6),
+      rgba($primary-color, 0.4)
+    ),
+    url("~assets/images/model-4.jpg") center top;
+  background-size: cover;
+
+  h2 {
+    // color: $primary-200;
+    color: #fff;
+    // color: $secondary-200;
+    // color: $secondary-color;
+
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    @include transition-ease;
+  }
+
+  .glass {
+    // height: 500px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    padding: 0.5rem 2.2rem 1.5rem;
+    justify-content: start;
+    @include transition-slow;
+    cursor: pointer;
+
+    backdrop-filter: blur(2px) saturate(131%);
+    -webkit-backdrop-filter: blur(2px) saturate(131%);
+    background-color: rgba(17, 25, 40, 0.44);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+    .contact-item {
+      //   border: 2px solid red;
+      padding: 0 auto 0.3rem;
+      //   border-bottom: 5px solid $primary-200;
+      //   color: $primary-200;
+      @include transition-ease;
+      color: $secondary-color;
+      font-size: 1rem;
+      //   color: $primary-200;
+      border-bottom: 5px solid $secondary-color;
+    }
+
+    .text-secondary {
+      @include transition-ease;
+      // color: $white-100;
+      color: #fff;
+      // color: $secondary-200;
+      font-size: 1rem;
+      margin: 0.2rem 0 0.6rem;
+      a {
+        color: $secondary-200;
+        padding: 0;
+        @include transition-ease;
+        &:hover {
+          //   color: $primary-400;
+          //   color: darken($white-100, 40);
+          color: darken($primary-200, 20);
+        }
+      }
+    }
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    font-size: 1.1rem;
+  }
+}

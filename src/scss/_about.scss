@@ -1,0 +1,59 @@
+.about {
+  position: relative;
+  color: #fff;
+  transform: rotateY(0);
+  @include transition-ease;
+
+  &-bio-image {
+    height: 100vh;
+    width: 100%;
+    @include background-101;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    @include transition-ease;
+  }
+
+  p {
+    text-align: left;
+    font-size: 0.9rem;
+    @include transition-ease;
+  }
+
+  &-bio {
+    width: 85%;
+    text-align: center;
+    padding: 0.5rem 1.2rem 2.5rem;
+    @include background-glass-2;
+    border-bottom: 5px solid $primary-200;
+    @include transition-slow;
+
+    opacity: 1;
+    overflow: hidden;
+    cursor: pointer;
+    .text-secondary {
+      padding-bottom: 1rem;
+    }
+  }
+
+  .text-secondary {
+    color: $primary-200;
+    font-weight: 600;
+    font-size: 40px;
+  }
+}
+
+// .about-menu-btn {
+//   &-burger {
+//     background: $secondary-200;
+//     &::before {
+//       background: $secondary-200;
+//     }
+//     &::after {
+//       background: $secondary-200;
+//     }
+//   }
+// }
