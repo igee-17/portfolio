@@ -537,7 +537,7 @@ nav .menu-nav-link {
     border-radius: 50%;
     background-color: #000;
     box-shadow: 0 0 40px 20px #fff, 0 0 100px 50px #0ff;
-    transition: box-shadow 4s ease-in-out;
+    transition: all 4s ease-in-out;
     -webkit-animation: spin 16s linear infinite;
             animation: spin 16s linear infinite;
   }

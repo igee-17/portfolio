@@ -31,7 +31,8 @@
       background-color: #000;
       box-shadow: 0 0 40px 20px #fff, 0 0 100px 50px #0ff;
       // @include transition-slow;
-      transition: box-shadow 4s ease-in-out;
+      // transition: box-shadow 4s ease-in-out;
+      transition: all 4s ease-in-out;
       animation: spin 16s linear infinite;
 
       @keyframes spin {
@@ -68,11 +69,36 @@
       &::before {
         transform: translateX(-100px);
         opacity: 1;
+        // animation: reel 8s linear infinite;
+        // @keyframes reel {
+        //   0% {
+        //     transform: translateX(0);
+        //   }
+        //   50% {
+        //     transform: translateX(-50px);
+        //   }
+        //   100% {
+        //     transform: translateX(-100px);
+        //   }
+        // }
       }
 
       &::after {
         transform: translateX(100px);
         opacity: 1;
+        // animation: reel2 8s linear infinite;
+        // animation-direction: alternate-reverse;
+        // @keyframes reel2 {
+        //   0% {
+        //     transform: translateX(0);
+        //   }
+        //   50% {
+        //     transform: translateX(50px);
+        //   }
+        //   100% {
+        //     transform: translateX(100px);
+        //   }
+        // }
       }
     }
     .second {

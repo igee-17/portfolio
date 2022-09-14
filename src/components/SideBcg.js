@@ -13,14 +13,26 @@ const SideBcg = () => {
     // }, 500);
 
     // return () => clearTimeout(timeout);
+
+    // setInterval(() => {
+    //   setIsActive(!isActive);
+    // }, 8000);
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsActive(!isActive);
-    }, 8000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setIsActive(!isActive);
+  //   }, 8000);
 
-    return () => clearInterval(interval);
+  //   return () => clearInterval(interval);
+  // }, []);
+
+  useEffect(() => {
+    const myTimeout = setTimeout(() => {
+      setIsActive(!isActive);
+    }, 10000);
+
+    return () => clearTimeout(myTimeout);
   }, [isActive]);
 
   return (
