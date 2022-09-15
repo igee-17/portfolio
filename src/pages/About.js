@@ -26,14 +26,13 @@ const About = () => {
           >
             <h2 className="text-secondary">BIO</h2>
             <p>
-              I'm an ambitious and humble web developer, designer, and crypto
-              trader from Ibadan, Nigeria.
+              I'm an ambitious and humble web developer and designer from
+              Ibadan, Nigeria.
               <br />
               <br />
-              I spend most of my day working on side projects, experimenting
-              with JavaScript and its endless list of frameworks and trading
-              cryptocurrencies. Before that I worked at/with Parach computers
-              ICT hub as a frontend developer filling the role of an instructor.
+              When not working a role, I spend most of my day working on side
+              projects, experimenting with JavaScript and its endless list of
+              frameworks.
               <br />
               <br />
               Here you'll find some of the projects I've done. One of them being
