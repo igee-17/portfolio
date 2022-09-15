@@ -824,6 +824,9 @@ nav .menu-nav-link {
   .wrapper .static-txt {
     font-size: 1.5rem;
   }
+  .wrapper .dynamic-txts span::after {
+    top: 0px;
+  }
   .wrapper .dynamic-txts li {
     font-size: 1.5rem;
   }
