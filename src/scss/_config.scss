@@ -190,6 +190,11 @@ body {
   }
 }
 
+@mixin media-s {
+  @media screen and (max-width: 468px) {
+    @content;
+  }
+}
 @mixin media-m {
   @media screen and (min-width: 768px) {
     @content;

@@ -9,23 +9,7 @@ const SideBcg = () => {
 
   useEffect(() => {
     setIsActive(true);
-    // const timeout = setTimeout(() => {
-    // }, 500);
-
-    // return () => clearTimeout(timeout);
-
-    // setInterval(() => {
-    //   setIsActive(!isActive);
-    // }, 8000);
   }, []);
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setIsActive(!isActive);
-  //   }, 8000);
-
-  //   return () => clearInterval(interval);
-  // }, []);
 
   useEffect(() => {
     const myTimeout = setTimeout(() => {

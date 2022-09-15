@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { navData } from "../utils/navData";
-// import { useDispatch } from "react-redux";
-// import { setSideBackground } from "../features/mainSlice";
 
 const Navbar = () => {
   const [isSidebar, setIsSidebar] = useState(false);

@@ -1,4 +1,3 @@
-import React from "react";
 import { SideBcg, Footer } from "../components";
 import { useSelector, useDispatch } from "react-redux";
 import { flipCard } from "../features/mainSlice";

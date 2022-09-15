@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { navData } from "../utils/navData";
-import { RiHome4Line, AiFillHome } from "react-icons/ri";
+import { RiHome4Line } from "react-icons/ri";
 
 const SideNav = () => {
   return (

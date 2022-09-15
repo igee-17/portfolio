@@ -1,18 +1,7 @@
-import { useEffect } from "react";
-import {
-  project1,
-  project2,
-  project3,
-  project4,
-  project5,
-  project6,
-  project7,
-} from "../assets/images";
 import { Footer } from "../components";
 import { projectsData } from "../utils/projectsData";
 
 const Projects = () => {
-  // useEffect(()=>{})
   return (
     <section className="projects">
       <div className="projects-bio-image">
@@ -36,83 +25,6 @@ const Projects = () => {
             </div>
           );
         })}
-        {/* <div className="projects-item">
-          <img src={project1} alt="My Project" />
-          <div className="projects-btns">
-            <a href="#!" className="projects-btn">
-              <i className="fas fa-eye"></i> Preview
-            </a>
-            <a href="#!" className="projects-btn">
-              <i className="fab fa-github"></i> Github
-            </a>
-          </div>
-        </div>
-        <div className="projects-item">
-          <img src={project2} alt="My Project" />
-          <div className="projects-btns">
-            <a href="#!" className="projects-btn">
-              <i className="fas fa-eye"></i> Preview
-            </a>
-            <a href="#!" className="projects-btn">
-              <i className="fab fa-github"></i> Github
-            </a>
-          </div>
-        </div>
-        <div className="projects-item">
-          <img src={project3} alt="My Project" />
-          <div className="projects-btns">
-            <a href="#!" className="projects-btn">
-              <i className="fas fa-eye"></i> Preview
-            </a>
-            <a href="#!" className="projects-btn">
-              <i className="fab fa-github"></i> Github
-            </a>
-          </div>
-        </div>
-        <div className="projects-item">
-          <img src={project4} alt="My Project" />
-          <div className="projects-btns">
-            <a href="#!" className="projects-btn">
-              <i className="fas fa-eye"></i> Preview
-            </a>
-            <a href="#!" className="projects-btn">
-              <i className="fab fa-github"></i> Github
-            </a>
-          </div>
-        </div>
-        <div className="projects-item">
-          <img src={project5} alt="My Project" />
-          <div className="projects-btns">
-            <a href="#!" className="projects-btn">
-              <i className="fas fa-eye"></i> Preview
-            </a>
-            <a href="#!" className="projects-btn">
-              <i className="fab fa-github"></i> Github
-            </a>
-          </div>
-        </div>
-        <div className="projects-item">
-          <img src={project6} alt="My Project" />
-          <div className="projects-btns">
-            <a href="#!" className="projects-btn">
-              <i className="fas fa-eye"></i> Preview
-            </a>
-            <a href="#!" className="projects-btn">
-              <i className="fab fa-github"></i> Github
-            </a>
-          </div>
-        </div>
-        <div className="projects-item">
-          <img src={project7} alt="My Project" />
-          <div className="projects-btns">
-            <a href="#!" className="projects-btn">
-              <i className="fas fa-eye"></i> Preview
-            </a>
-            <a href="#!" className="projects-btn">
-              <i className="fab fa-github"></i> Github
-            </a>
-          </div>
-        </div> */}
       </section>
 
       <div className="social-icons">

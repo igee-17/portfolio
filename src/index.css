@@ -492,7 +492,7 @@ nav .menu-nav-link {
   margin: 0.2rem 0 0.6rem;
 }
 .contact .glass .text-secondary a {
-  color: #c3fcf1;
+  color: #f4fefc;
   padding: 0;
   transition: all 0.5s ease-in-out;
 }
@@ -590,6 +590,119 @@ nav .menu-nav-link {
     left: 40px;
   }
 }
+.card-flipped {
+  transform: rotateY(180deg);
+  border-bottom: 5px solid #a76fff;
+}
+.card-flipped h2,
+.card-flipped p,
+.card-flipped .home-name,
+.card-flipped .home-desc,
+.card-flipped .contact-list,
+.card-flipped .contact-item,
+.card-flipped .text-secondary {
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.flip-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transform: rotateY(0);
+  z-index: -999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.flip-card-icons a {
+  display: none;
+  position: inline-block;
+  z-index: -999;
+}
+.flip-card-active {
+  z-index: 999;
+  transform: rotateY(180deg);
+  opacity: 1;
+}
+.flip-card-icons {
+  min-height: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.flip-card-icons a {
+  display: block;
+  height: 70px;
+  width: 80px;
+  z-index: 999;
+  border-bottom: 5px solid #a76fff;
+  font-size: 20px;
+}
+.flip-card-icons a:hover {
+  color: #a76fff;
+}
+
+.side-nav {
+  height: 100px;
+  width: 100px;
+  border: 2px solid blue;
+  position: absolute;
+  top: 40%;
+  right: 1rem;
+  z-index: 99999999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  transition: all 0.3s ease-out 0s;
+}
+.side-nav-item {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  font-size: 1.5rem;
+  padding-right: 0.2rem;
+  padding-left: 0.3rem;
+  border-radius: 2rem;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 2px solid green;
+  background: #a76fff;
+  transition: all 0.3s ease-out 0s;
+}
+.side-nav-item .before {
+  font-size: 0.9rem;
+  position: absolute;
+  background: #a76fff;
+  width: 3rem;
+  height: 100%;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-out 0s;
+}
+.side-nav-item:hover {
+  width: 100%;
+  transition: all 0.3s ease-out 0s;
+}
+.side-nav-item:hover .before {
+  visibility: visible;
+}
+
 @media screen and (min-width: 768px) {
   .menu-btn {
     display: none;
@@ -694,112 +807,52 @@ nav .menu-nav-link {
     width: 60vw;
   }
 }
-.card-flipped {
-  transform: rotateY(180deg);
-  border-bottom: 5px solid #a76fff;
+@media screen and (max-width: 468px) {
+  .home {
+    padding: 0 0.7rem;
+    justify-content: center;
+  }
+  .home h2 {
+    font-size: 1.5rem;
+  }
+  .home-name {
+    font-size: 2rem;
+  }
+  .home .glass {
+    height: 22rem;
+  }
+  .wrapper .static-txt {
+    font-size: 1.5rem;
+  }
+  .wrapper .dynamic-txts li {
+    font-size: 1.5rem;
+  }
+  .flip-card-icons {
+    gap: 2.5rem;
+  }
+  main .social-icons {
+    left: 0.5rem;
+    display: none;
+  }
+  main a {
+    color: #fff;
+    font-size: 0.4rem;
+    padding: 0.4rem;
+  }
+  footer {
+    font-size: 0.2rem;
+  }
+  .about-bio {
+    width: 95%;
+  }
+  .projects-bio-image {
+    height: 20vh;
+  }
+  .contact {
+    padding: 0;
+    justify-content: center;
+  }
 }
-.card-flipped h2,
-.card-flipped p,
-.card-flipped .home-name,
-.card-flipped .home-desc,
-.card-flipped .contact-list,
-.card-flipped .contact-item,
-.card-flipped .text-secondary {
-  transition: all 0.5s ease-in-out;
-  opacity: 0;
-}
-
-.flip-card {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transform: rotateY(0);
-  z-index: -1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s ease-in-out;
-}
-.flip-card-active {
-  z-index: 999;
-  transform: rotateY(180deg);
-  opacity: 1;
-}
-.flip-card-icons {
-  min-height: 80%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 50%;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.flip-card-icons a {
-  height: 70px;
-  width: 80px;
-  border-bottom: 5px solid #a76fff;
-  font-size: 20px;
-}
-.flip-card-icons a:hover {
-  color: #a76fff;
-}
-
-.side-nav {
-  height: 100px;
-  width: 100px;
-  border: 2px solid blue;
-  position: absolute;
-  top: 40%;
-  right: 1rem;
-  z-index: 99999999999;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  transition: all 0.3s ease-out 0s;
-}
-.side-nav-item {
-  position: relative;
-  width: 100%;
-  height: 150px;
-  font-size: 1.5rem;
-  padding-right: 0.2rem;
-  padding-left: 0.3rem;
-  border-radius: 2rem;
-  color: white;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  border: 2px solid green;
-  background: #a76fff;
-  transition: all 0.3s ease-out 0s;
-}
-.side-nav-item .before {
-  font-size: 0.9rem;
-  position: absolute;
-  background: #a76fff;
-  width: 3rem;
-  height: 100%;
-  visibility: hidden;
-  transition: all 0.5s ease-in-out;
-  transition: all 0.3s ease-out 0s;
-}
-.side-nav-item:hover {
-  width: 100%;
-  transition: all 0.3s ease-out 0s;
-}
-.side-nav-item:hover .before {
-  visibility: visible;
-}
-
 *,
 body,
 ::before,

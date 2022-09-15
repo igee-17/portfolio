@@ -11,6 +11,7 @@
   text-align: left;
   display: flex;
   flex-direction: column;
+  // justify-content: center
   background: linear-gradient(
       to right,
       rgba($primary-color, 0.9),
@@ -70,7 +71,7 @@
       font-size: 1rem;
       margin: 0.2rem 0 0.6rem;
       a {
-        color: $secondary-200;
+        color: lighten($secondary-200, 10);
         padding: 0;
         @include transition-ease;
         &:hover {

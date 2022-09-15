@@ -1,4 +1,3 @@
-// import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
   Home,
@@ -8,18 +7,8 @@ import {
   Projects,
   ErrorPage,
 } from "./pages";
-// import { useSelector } from "react-redux";
 
 function App() {
-  // const { isSidebar } = useSelector((store) => store.main);
-  // const [sideBag, setSideBag] = useState(false);
-
-  // useEffect(() => {
-  //   // console.log(store.getState());
-  //   setSideBag(isSidebar);
-  //   console.log(sideBag);
-  // }, []);
-
   return (
     <Router>
       <Routes>

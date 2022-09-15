@@ -1,7 +1,6 @@
-import { useEffect } from "react";
 import { SideBcg, Footer } from "../components";
 import { useSelector, useDispatch } from "react-redux";
-import { flipCard, resetCard } from "../features/mainSlice";
+import { flipCard } from "../features/mainSlice";
 
 const About = () => {
   const dispatch = useDispatch();

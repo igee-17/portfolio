@@ -138,3 +138,85 @@
     width: 60vw;
   }
 }
+
+// SMALL SCREEN SIZE
+
+@include media-s {
+  .home {
+    padding: 0 0.7rem;
+    justify-content: center;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    &-name {
+      font-size: 2rem;
+    }
+    .glass {
+      height: 22rem;
+      // border: 2px solid red;
+    }
+  }
+  .wrapper {
+    // border: 2px solid blue;
+    // overflow: visible;
+
+    .static-txt {
+      font-size: 1.5rem;
+    }
+
+    .dynamic-txts {
+      // overflow: visible;
+
+      li {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .flip-card {
+    // border: 2px solid red;
+    &-icons {
+      gap: 2.5rem;
+    }
+  }
+
+  main {
+    .social-icons {
+      left: 0.5rem;
+      display: none;
+    }
+
+    a {
+      color: #fff;
+      font-size: 0.4rem;
+      padding: 0.4rem;
+    }
+  }
+  footer {
+    font-size: 0.2rem;
+    // color: red;
+  }
+
+  .about {
+    // .glass {
+    //   border: 2px solid red;
+    // }
+    &-bio {
+      width: 95%;
+      // border: 2px soli
+    }
+  }
+
+  .projects {
+    &-bio-image {
+      height: 20vh;
+    }
+  }
+
+  .contact {
+    padding: 0;
+    justify-content: center;
+  }
+}
