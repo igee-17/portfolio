@@ -822,13 +822,13 @@ nav .menu-nav-link {
     height: 22rem;
   }
   .wrapper .static-txt {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .wrapper .dynamic-txts span::after {
     top: 0px;
   }
   .wrapper .dynamic-txts li {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .flip-card-icons {
     gap: 2.5rem;
