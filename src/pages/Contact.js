@@ -27,22 +27,19 @@ const Contact = () => {
           <h2>Contact Me</h2>
           <div className="contact-list">
             <div className="contact-item contact-email">
-              <i className="fas fa-envelope"></i>
-              Email
+              <i className="fas fa-envelope"></i> Email
               <div className="text-secondary">
                 <a href="mailto:igbagboleye@gmail.com">igbagboleye@gmail.com</a>
               </div>
             </div>
             <div className="contact-item contact-phone">
-              <i className="fas fa-mobile-alt"></i>
-              Phone
+              <i className="fas fa-mobile-alt"></i> Phone
               <div className="text-secondary">
                 <a href="tel:+2347061196917">+(234)70-611-969-17</a>
               </div>
             </div>
             <div className="contact-item contact-address">
-              <i className="fas fa-marker"></i>
-              Address
+              <i className="fas fa-marker"></i> Address
               <div className="text-secondary">Ibadan, Nigeria.</div>
             </div>
           </div>
