@@ -8,7 +8,6 @@
 @import "./scss/side-bcg";
 @import "./scss/flip-card";
 @import "./scss/side-nav";
-@import "./scss/responsive";
 
 *,
 body,
@@ -95,3 +94,5 @@ footer {
   border-radius: 0;
   border-top: 2px solid $secondary-color;
 }
+
+@import "./scss/responsive";

@@ -703,6 +703,80 @@ nav .menu-nav-link {
   visibility: visible;
 }
 
+*,
+body,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #272727;
+  color: #efefef;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  background: #272727;
+  color: #efefef;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+main .social-icons {
+  position: fixed;
+  z-index: 1;
+  bottom: 0.7rem;
+  left: 1rem;
+}
+main a {
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.4rem;
+}
+
+footer {
+  font-size: 0.8rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  padding: 1.2rem;
+  width: 100%;
+  background: #000;
+  border-radius: 0;
+  border-top: 2px solid #a76fff;
+}
+
 @media screen and (min-width: 768px) {
   .menu-btn {
     display: none;
@@ -843,7 +917,9 @@ nav .menu-nav-link {
     padding: 0.4rem;
   }
   footer {
-    font-size: 0.2rem;
+    font-size: 0.6rem;
+    text-align: center;
+    width: 100vw;
   }
   .about-bio {
     width: 95%;
@@ -855,77 +931,4 @@ nav .menu-nav-link {
     padding: 0;
     justify-content: center;
   }
-}
-*,
-body,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #272727;
-  color: #efefef;
-  height: 100vh;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#root {
-  background: #272727;
-  color: #efefef;
-  height: 100vh;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: 400;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-header {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  z-index: 2;
-  width: 100%;
-}
-
-main {
-  height: 100%;
-  width: 100%;
-}
-main .social-icons {
-  position: fixed;
-  z-index: 1;
-  bottom: 0.7rem;
-  left: 1rem;
-}
-main a {
-  color: #fff;
-  font-size: 0.9rem;
-  padding: 0.4rem;
-}
-
-footer {
-  font-size: 0.8rem;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  text-align: right;
-  padding: 1.2rem;
-  width: 100%;
-  background: #000;
-  border-radius: 0;
-  border-top: 2px solid #a76fff;
 }/*# sourceMappingURL=index.css.map */
